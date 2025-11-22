@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Settings, Feather, Sun, Moon, Info } from 'lucide-react';
+import { Settings, Feather, Sun, Moon, Info, Code2 } from 'lucide-react';
 import { AppSettings, TextChunk } from './types';
 import { splitText } from './utils/textUtils';
 import { SettingsDrawer } from './components/SettingsDrawer';
@@ -92,6 +92,7 @@ const App: React.FC = () => {
               onClick={toggleDarkMode}
               className="p-2 hover:bg-fantasy-paper dark:hover:bg-slate-800 rounded-lg transition-colors text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400"
               aria-label="Toggle Dark Mode"
+              title="Theme Toggle"
             >
               {settings.darkMode ? <Sun size={20} /> : <Moon size={20} />}
             </button>
@@ -99,13 +100,25 @@ const App: React.FC = () => {
               onClick={() => setIsInfoOpen(true)}
               className="p-2 hover:bg-fantasy-paper dark:hover:bg-slate-800 rounded-lg transition-colors text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400"
               aria-label="Info"
+              title="Info"
             >
               <Info size={20} />
             </button>
+            <a
+              href="https://github.com/Valaron-Jakob/bards-quill"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 hover:bg-fantasy-paper dark:hover:bg-slate-800 rounded-lg transition-colors text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400"
+              aria-label="GitHub"
+              title="View on GitHub"
+            >
+              <Code2 size={20} />
+            </a>
             <button
               onClick={() => setIsSettingsOpen(true)}
               className="p-2 hover:bg-fantasy-paper dark:hover:bg-slate-800 rounded-lg transition-colors text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400"
               aria-label="Settings"
+              title="Settings"
             >
               <Settings size={20} />
             </button>
