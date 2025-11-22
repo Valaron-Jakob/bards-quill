@@ -9,12 +9,13 @@ import { OutputCard } from './components/OutputCard';
 const DEFAULT_SETTINGS: AppSettings = {
   chunkSize: 256,
   partPrefix: "",
-  partSuffix: "...",
+  partSuffix: " >",
   fontSize: 'text-base',
   darkMode: false,
   highlightRules: [
-    { id: '1', name: 'Speech', startChar: '"', endChar: '"', color: '#2563eb' },
-    { id: '2', name: 'Action', startChar: '*', endChar: '*', color: '#e11d48' },
+    { id: '1', name: 'Emotes', startChar: '*', endChar: '*', color: '#2563eb' },
+    { id: '2', name: 'Offtopic', startChar: '((', endChar: '))', color: '#e11d48' },
+    { id: '2', name: 'Thoughts', startChar: '[', endChar: ']', color: '#9333ea' },
   ]
 };
 
