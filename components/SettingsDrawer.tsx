@@ -1,5 +1,5 @@
 import React from 'react';
-import { X, Plus, Trash2, Type } from 'lucide-react';
+import { X, Plus, Trash2, Type, Settings } from 'lucide-react';
 import { AppSettings, HighlightRule, FontSize } from '../types';
 
 interface SettingsDrawerProps {
@@ -74,7 +74,10 @@ export const SettingsDrawer: React.FC<SettingsDrawerProps> = ({
       {/* Drawer */}
       <div className="relative w-full max-w-md h-full bg-fantasy-paper dark:bg-slate-900 shadow-2xl flex flex-col border-l border-indigo-100 dark:border-slate-800 animate-in slide-in-from-right duration-300">
         <div className="p-6 border-b border-indigo-50 dark:border-slate-800 flex justify-between items-center bg-gradient-to-r from-fantasy-bg to-fantasy-paper dark:from-slate-900 dark:to-slate-800">
-          <h2 className="text-2xl font-serif text-slate-800 dark:text-slate-100 font-bold">Quill Settings</h2>
+          <h2 className="text-2xl font-serif text-slate-800 dark:text-slate-100 font-bold flex items-center gap-2">
+            <Settings className="text-indigo-500" size={24} />
+            Quill Settings
+          </h2>
           <button 
             onClick={onClose}
             className="p-2 hover:bg-indigo-100 dark:hover:bg-slate-800 rounded-full transition-colors text-slate-500 dark:text-slate-400"
