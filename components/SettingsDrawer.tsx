@@ -10,12 +10,14 @@ interface SettingsDrawerProps {
 }
 
 const COLORS = [
-  { name: 'Rose', value: '#e11d48', class: 'bg-rose-500' },
-  { name: 'Blue', value: '#2563eb', class: 'bg-blue-600' },
-  { name: 'Green', value: '#16a34a', class: 'bg-green-600' },
-  { name: 'Purple', value: '#9333ea', class: 'bg-purple-600' },
   { name: 'Amber', value: '#d97706', class: 'bg-amber-600' },
+  { name: 'Rose', value: '#e11d48', class: 'bg-rose-500' },
+  { name: 'Purple', value: '#9333ea', class: 'bg-purple-600' },
+  { name: 'Blue', value: '#2563eb', class: 'bg-blue-600' },
+  { name: 'Moonstone', value: '#60a5fa', class: 'bg-sky-400' },
+  { name: 'Warm Slate', value: '#94a3b8', class: 'bg-slate-400' },
   { name: 'Gray', value: '#4b5563', class: 'bg-gray-600' },
+  { name: 'Green', value: '#16a34a', class: 'bg-green-600' },
 ];
 
 const FONT_SIZES: { label: string; value: FontSize }[] = [
